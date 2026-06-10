@@ -29,6 +29,11 @@ jobs:
         cache: maven
     - name: Build and analyze
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=azkiyafnii -Dsonar.projectKey=azkiyafnii_TES-MKEPL-1
+      run: |
+        mvn verify sonar:sonar \
+          -Dsonar.host.url=https://sonarcloud.io \
+          -Dsonar.organization=azkiyafnii-1 \
+          -Dsonar.projectKey=azkiyafnii_TES-MKEPL-1 \
+          -Dsonar.token=${{ secrets.SONAR_TOKEN }}
