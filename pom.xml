@@ -16,7 +16,7 @@
     <repository>
         <id>github</id>
         <name>GitHub Packages</name>
-        <url>https://maven.pkg.github.com/azkiyafnii/inspection(1)</url>
+        <url>https://maven.pkg.github.com/azkiyafnii/TEST-MKEPL-1</url>
     </repository>
 </distributionManagement>
 
