@@ -12,11 +12,11 @@ public class Counter {
 		count = 0;
 	}
 	
-	public void increment(int a) {
+	public void increment() {
 		count++;
 	}
 	
-	public void decrement(int b) {
+	public void decrement() {
 		count--;
 	}
 	
